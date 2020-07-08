@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body, html {
+font-family: 'Poppins', sans-serif;
+height: 100%;
+margin: 0;
+}
+
+body {
+	background: #ADBBB4 url('images/background.svg');
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-position: right;
+}
+
+#container {
+	display: grid;
+	grid-template-columns: .5fr 1fr 1fr .5fr;
+	grid-gap: 10px;
+	grid-template-areas: 
+	". left right .";
+	height: 100%;
+	overflow: hidden;
+}
+
+#icons-set {
+	grid-area: left;
+	align-self: center;
+	justify-content: center;
+}
+
+.cta {
+background-color: black;
+padding: 1em;
+text-decoration: none;
+color: white;
+width: 60%;
+display: inline-block;
+margin-top: 2em;
+align-items: end;
+z-index: 10;
+text-align: center;
+}
+
+.cta:hover {
+	background: linear-gradient(0.25turn, #2E6DB4, #00AC9F);
+	transition: 2s;
+
+
+
+}
+
+.one {
+ position: relative;
+animation-name: myanimation;
+animation-duration: 5s;
+animation-iteration-count: 10;
+z-index: -1;
+}
+
+.two {
+ position: relative;
+animation-name: myanimation2;
+animation-duration: 4s;
+animation-iteration-count: 10;
+z-index: -1;
+}
+
+.three {
+ position: relative;
+animation-name: myanimation3;
+animation-duration: 3s;
+animation-iteration-count: 10;
+z-index: -1;
+}
+
+.four {
+ position: relative;
+animation-name: myanimation4;
+animation-duration: 5s;
+animation-iteration-count: 10;
+z-index: -1;
+}
+
+@keyframes myanimation {
+  0% {top: -550px;}
+  100% {top: 700px;}
+}
+
+
+@keyframes myanimation2 {
+  0% {top: -600px;}
+  100% {top: 800px;}
+}
+
+@keyframes myanimation3 {
+  0% {top: -600px;}
+  100% {top: 800px;}
+}
+
+@keyframes myanimation4 {
+  0% {top: -600px;}
+  100% {top: 800px;}
+}
